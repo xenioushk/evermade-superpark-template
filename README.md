@@ -1,6 +1,6 @@
-# Valamis Template Assignment
+# Evermade Superpark Template Assignment
 
-- [Demo](https://sandbox.bluewindlab.com/valamis/)
+- [Demo](https://sandbox.bluewindlab.com/evermade/)
 
 # Installation
 

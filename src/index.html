@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple html template project. ">
+    <meta name="author" content="Mahbub Alam Khan">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon.png">
+
+  </head>
+
+
+  <body>
+
+
+    <header>
+      <div class="container container--full-width">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" class="logo__img">
+          </div>
+          <ul class="header_nav">
+            <li>
+              <a href="#" class="header_nav__link">PUISTOT</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">SYNTYMAPAIVAT</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">AKTIVITEETIT</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">RYHMILLE</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">YRITYKSILLE</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">OTA YHTEYTTA</a>
+            </li>
+            <li>
+              <a href="#" class="header_nav__link">UNITED</a>
+            </li>
+          </ul>
+
+          <ul class="header_lang">
+            <li>
+              <a href="#">FI</a>
+            </li>
+            <li>
+              <a href="#">SV</a>
+            </li>
+            <li>
+              <a href="#">EN</a>
+            </li>
+            <li>
+              <a href="#">RU</a>
+            </li>
+          </ul>
+
+          <div class="nav_cta">
+
+            <a href="#" class="btn btn--theme btn--header-nav">OSTA LIPUT</a>
+          </div>
+          <box-icon name='menu-alt-right' size="sm" class="menu"></box-icon>
+          <!-- <box-icon name='x' size="sm" class="menu"></box-icon> -->
+
+          <!-- <box-icon name='x'></box-icon> -->
+
+        </nav>
+      </div>
+    </header>
+
+    <!-- Start Hero Section -->
+
+    <section class="hero">
+      <img src="images/hero_polygon_bottom.png" class="hero__polygon_bottom">
+      <div class="container container--hero">
+        <div class="hero__content">
+          <h1 class="hero__title">WELCOME TO SUPERPARK</h1>
+          <p class="hero__lead">SuperPark is spreading its wings all over the country. Now there are already 13 SuperParks in Finland.</p>
+
+          <div class="hero__btn_container">
+            <a href="#" class="btn btn--theme">NEAREST PARK</a>
+            <a href="#" class="btn btn--video-icon">WATCH VIDEO
+              <img src="images/icon_play.png"></a>
+          </div>
+
+        </div>
+
+        <div class="hero__featured_image">
+          <img src="images/hero_feat_img.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Start Video Section -->
+
+    <section class="video">
+
+      <div class="container container--video">
+
+        <div class="video__content">
+          <img src="images/video_feat_img.png" alt="" class="video__featured_img">
+          <div class="video__icon">
+            <box-icon name='play' size="lg" color="#2ae2a3"></box-icon>
+          </div>
+          <img src="images/video_polygon_yellow.png" alt="" class="video__content__polygon_bottom">
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- Start New Section -->
+
+    <section class="news">
+
+      <img src="images/news_polygon_top.png" class="news__polygon_top">
+      <img src="images/news_polygon_bottom.png" class="news__polygon_bottom">
+
+      <div class="container">
+
+        <div class="news-card">
+          <img src="images/news-placeholder.png" class="news-card__featured_image" alt="news">
+
+          <div class="news-card__info">
+            <h2 class="news-card__title">
+              <a href="#" title="NYT ON UUTTA!">NYT ON UUTTA!</a>
+            </h2>
+            <p class="news-card__description">
+              Ennen kokemattoman koukuttava trampoliinipeli ValoJump – Huisin hauska jalkapallopeli SubSoccer – Sykkeet kattoon nostava SuperBall – Ketteryyttä koetteleva kiipeilykaupunki –
+            </p>
+            <a href="#" class="btn btn--news-card">Lue lisää</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="images/news-placeholder.png" class="news-card__featured_image" alt="news">
+          <div class="news-card__info">
+            <h2 class="news-card__title">
+              <a href="#" title="3 FOR 2 – SPARKKAA VÄHEMMÄLLÄ ENEMMÄN">3 FOR 2 – SPARKKAA VÄHEMMÄLLÄ ENEMMÄN</a>
+            </h2>
+            <p class="news-card__description">
+              3 for 2 -kuukausikortti – sparkkaa kolme kuukautta kahden hinnalla. Sparkkaa silloin kun haluat ja miten haluat, ei tiukkaa treeniaikataulua ja -ohjeita.
+            </p>
+
+            <a href="#" class="btn btn--news-card">Lue lisää</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="images/news-placeholder.png" class="news-card__featured_image" alt="news">
+          <div class="news-card__info">
+            <h2 class="news-card__title">
+              <a href="#" title="comeback!">comeback!</a>
+            </h2>
+            <p class="news-card__description">
+              Ennen kokemattoman koukuttava trampoliinipeli ValoJump – Huisin hauska jalkapallopeli SubSoccer – Sykkeet kattoon nostava SuperBall – Ketteryyttä koetteleva…
+            </p>
+
+            <a href="#" class="btn btn--news-card">Lue lisää</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Show more button -->
+      <div class="news__show_more_container">
+        <a href="#" class="btn btn--show-more text-uppercase">lisää uutisia</a>
+      </div>
+
+    </section>
+
+  </body>
+</html>
