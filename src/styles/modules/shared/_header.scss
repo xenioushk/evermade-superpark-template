@@ -151,10 +151,11 @@ box-icon {
 
     a {
       padding: 0.13rem;
+      color: $primary-color;
 
       &:hover {
         background: none;
-        color: darken($primary-color, 5%);
+        color: darken($primary-color, 15%);
         @include round(4px);
         @include transition(all, 0.2s);
       }
@@ -179,6 +180,7 @@ box-icon {
       margin-right: 18px;
       position: relative;
       a {
+        color: $primary-color;
         font-weight: 400;
         color: $dark-text-color;
       }
