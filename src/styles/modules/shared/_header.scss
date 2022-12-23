@@ -1,7 +1,5 @@
 header {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #eee;
 }
 
 .logo {
@@ -33,16 +31,23 @@ nav {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding: 0;
+  margin: 0rem 0 0 0;
+  justify-content: space-between;
+  font-size: 1rem;
 }
 
 .header_nav {
   display: none;
+
+  order: 1;
   padding: 0;
   margin: 0;
   font-size: 0.75rem;
 
   li {
     display: block;
+    text-align: center;
     margin-left: 0rem;
   }
 
@@ -64,6 +69,35 @@ nav {
   }
 }
 
+// Language
+
+.header_lang {
+  display: none;
+  order: 3;
+  // display: block;
+  list-style-type: none;
+  margin-bottom: 12px;
+  text-align: center;
+  li {
+    display: inline-block;
+    flex-basis: 32px;
+    margin: 0 6px;
+    a {
+      flex-direction: row;
+    }
+  }
+}
+
+.nav_cta {
+  // display: block;
+  order: 2;
+  flex-direction: row;
+  margin: 24px 0;
+  text-align: center;
+
+  display: none;
+}
+
 box-icon {
   display: block;
   position: absolute;
@@ -75,19 +109,10 @@ box-icon {
 .showmenu {
   background: darken($light-bg, 4%);
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 1;
-  top: 80px;
-  left: 0;
-}
-
-nav {
-  padding: 0;
-  margin: 1.5rem 0 0 0;
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
+  margin-top: 6px;
 }
 
 box-icon {
