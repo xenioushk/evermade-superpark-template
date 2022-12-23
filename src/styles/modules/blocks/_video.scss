@@ -10,16 +10,16 @@
   &__content {
     padding: 10px 50px 50px 60px;
     display: grid;
-    max-width: 720px;
+    max-width: 420px;
     margin: 0 auto;
     position: relative;
     &__polygon_bottom {
       position: absolute;
       bottom: 0;
       right: 0;
-      margin-bottom: -5%;
-      margin-right: -10%;
-      width: 140px;
+      margin-bottom: 3%;
+      margin-right: 1%;
+      width: 60px;
       max-width: 100%;
     }
   }
@@ -36,8 +36,8 @@
     align-self: center;
     grid-column: 1;
     grid-row: 1;
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
     background-color: $primary-color;
     border-radius: 100%;
     border: 2px solid #2ae2a3;
@@ -48,7 +48,8 @@
 
     box-icon {
       position: relative;
-      margin-left: 14px;
+      margin-left: 8px;
+      margin-top: -8px;
       display: inline-block;
     }
   }
@@ -56,23 +57,78 @@
 
 // Responsive
 
-@media (min-width: 48rem) {
-  .news-card {
-    padding: 0;
-    margin: 0;
-    &__featured_image {
-      position: relative;
+// Tablet.
+@media (min-width: 576px) {
+  .video {
+    &__content {
+      max-width: 570px;
+    }
+    &__polygon_bottom {
+      width: 80px;
+    }
+  }
+}
+
+// Tablet Horizontal screen
+@media (min-width: 768px) {
+  .video {
+    &__content {
+      max-width: 720px;
+    }
+    &__polygon_bottom {
+      width: 80px;
     }
   }
 }
 
 // Large screen
-@media (min-width: 56rem) {
-  .news-card {
-    padding: 0;
-    margin: 0;
-    &__featured_image {
+// Large screen
+@media (min-width: 1100px) {
+  .video {
+    &__content {
+      padding: 10px 50px 50px 60px;
+      display: grid;
+      max-width: 720px;
+      margin: 0 auto;
       position: relative;
+      &__polygon_bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -5%;
+        margin-right: -10%;
+        width: 140px;
+        max-width: 100%;
+      }
+    }
+
+    &__featured_img {
+      grid-column: 1;
+      grid-row: 1;
+      display: block;
+      max-width: 100%;
+    }
+
+    &__icon {
+      justify-self: center;
+      align-self: center;
+      grid-column: 1;
+      grid-row: 1;
+      width: 72px;
+      height: 72px;
+      background-color: $primary-color;
+      border-radius: 100%;
+      border: 2px solid #2ae2a3;
+      cursor: pointer;
+      color: white;
+      z-index: 100;
+      position: relative;
+
+      box-icon {
+        position: relative;
+        margin-left: 14px;
+        display: inline-block;
+      }
     }
   }
 }
