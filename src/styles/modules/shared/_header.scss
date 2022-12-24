@@ -11,21 +11,6 @@ header {
   &__img {
     display: inline-block;
   }
-
-  &__title {
-    font-size: 1.5rem;
-    margin: 0;
-    font-weight: 600;
-  }
-
-  &__subtitle {
-    display: block;
-    font-size: 0.75rem;
-    margin: 0;
-    color: $default-font-color;
-    opacity: 0.7;
-    padding-right: 24px; // it's prevent the text overflow with the menu.
-  }
 }
 
 // Nav
@@ -60,7 +45,7 @@ nav {
     padding: 6px 6px;
     font-weight: 300;
     color: $primary-color;
-    letter-spacing: 0.1rem;
+    // letter-spacing: 0.1rem;
     &:hover {
       color: darken($primary-color, 20%);
       background: darken($light-bg, 1%);
@@ -93,7 +78,7 @@ nav {
     flex-basis: 32px;
     margin: 0 6px;
     a {
-      font-weight: 300;
+      font-weight: 200;
       flex-direction: row;
     }
   }
@@ -220,7 +205,7 @@ box-icon {
       position: relative;
       a {
         color: $primary-color;
-        font-weight: 400;
+        font-weight: 200;
         color: $dark-text-color;
       }
 
@@ -233,6 +218,7 @@ box-icon {
         top: 0;
         right: -16px;
         margin: 0 6px;
+        font-weight: 200;
       }
       &:last-child {
         margin-right: 0;
