@@ -42,10 +42,10 @@ nav {
 
 .header_nav {
   display: none;
-
   order: 1;
   padding: 0;
   margin: 0;
+  font-weight: 400;
   font-size: 0.75rem;
 
   li {
@@ -58,7 +58,11 @@ nav {
     display: block;
     margin: 0px 0;
     padding: 6px 6px;
+    font-weight: 300;
+    color: $primary-color;
+    letter-spacing: 0.1rem;
     &:hover {
+      color: darken($primary-color, 20%);
       background: darken($light-bg, 1%);
     }
 
@@ -79,13 +83,17 @@ nav {
   order: 3;
   // display: block;
   list-style-type: none;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
   text-align: center;
+  background: darken($light-bg, 6%);
+  padding: 6px 0 12px 0;
+  border-radius: 2px 0px 10px 10px;
   li {
     display: inline-block;
     flex-basis: 32px;
     margin: 0 6px;
     a {
+      font-weight: 300;
       flex-direction: row;
     }
   }
@@ -95,10 +103,11 @@ nav {
   // display: block;
   order: 2;
   flex-direction: row;
-  margin: 24px 0;
+  padding: 12px 0;
+  margin: 0px;
   text-align: center;
-
   display: none;
+  background: darken($light-bg, 6%);
 }
 
 box-icon {
@@ -110,7 +119,7 @@ box-icon {
 }
 
 .showmenu {
-  background: darken($light-bg, 4%);
+  background: darken($light-bg, 6%);
   display: block;
   position: relative;
   width: 100%;
@@ -204,7 +213,7 @@ box-icon {
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
-
+    background: transparent;
     li {
       display: inline-block;
       margin-right: 18px;
@@ -236,6 +245,7 @@ box-icon {
   }
 
   .nav_cta {
+    background: transparent;
     order: 2;
     display: flex;
     justify-content: center;
