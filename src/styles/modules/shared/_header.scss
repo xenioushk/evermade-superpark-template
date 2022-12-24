@@ -1,9 +1,12 @@
 header {
-  background-color: #eee;
+  clear: both;
 }
 
 .logo {
   color: $dark-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
   &__img {
     display: inline-block;
@@ -195,10 +198,12 @@ box-icon {
   }
 
   .header_lang {
+    order: 1;
     list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
 
     li {
       display: inline-block;
@@ -231,6 +236,7 @@ box-icon {
   }
 
   .nav_cta {
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
