@@ -1,6 +1,6 @@
 # Evermade Superpark Template Assignment
 
-- [Demo](https://sandbox.bluewindlab.com/evermade/)
+- [Check Demo](https://xenioushk.github.io/evermade-superpark-template/)
 
 # Installation
 
