@@ -4,7 +4,7 @@
   "description": "",
   "main": "App.js",
   "scripts": {
-    "start": "webpack serve --config webpack.dev.js",
+    "start": "webpack build --watch --config webpack.dev.js",
     "build": "webpack build --config webpack.prod.js",
     "build:dev": "webpack build --config webpack.dev.js",
     "build:prod": "webpack build --config webpack.prod.js",

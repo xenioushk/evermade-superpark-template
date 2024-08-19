@@ -1,6 +1,6 @@
 // Load SCSS Files.
 import "boxicons"
-import "./styles/main.scss"
+import "./styles/styles.scss"
 
 // Load all the JS modules.
 
